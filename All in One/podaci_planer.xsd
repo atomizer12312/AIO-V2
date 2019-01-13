@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="podaci_planer" targetNamespace="http://tempuri.org/podaci_planer.xsd" xmlns:mstns="http://tempuri.org/podaci_planer.xsd" xmlns="http://tempuri.org/podaci_planer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="podaci_planer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="podaci_planer" msprop:Generator_UserDSName="podaci_planer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Planer" msprop:Generator_TableClassName="PlanerDataTable" msprop:Generator_TableVarName="tablePlaner" msprop:Generator_RowChangedName="PlanerRowChanged" msprop:Generator_TablePropName="Planer" msprop:Generator_RowDeletingName="PlanerRowDeleting" msprop:Generator_RowChangingName="PlanerRowChanging" msprop:Generator_RowEvHandlerName="PlanerRowChangeEventHandler" msprop:Generator_RowDeletedName="PlanerRowDeleted" msprop:Generator_RowClassName="PlanerRow" msprop:Generator_UserTableName="Planer" msprop:Generator_RowEvArgName="PlanerRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Plan" msprop:Generator_ColumnVarNameInTable="columnPlan" msprop:Generator_ColumnPropNameInRow="Plan" msprop:Generator_ColumnPropNameInTable="PlanColumn" msprop:Generator_UserColumnName="Plan" type="xs:string" minOccurs="0" />
+              <xs:element name="Prioritet" msprop:Generator_ColumnVarNameInTable="columnPrioritet" msprop:Generator_ColumnPropNameInRow="Prioritet" msprop:Generator_ColumnPropNameInTable="PrioritetColumn" msprop:Generator_UserColumnName="Prioritet" type="xs:string" minOccurs="0" />
+              <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:string" minOccurs="0" />
+              <xs:element name="Vreme" msprop:Generator_ColumnVarNameInTable="columnVreme" msprop:Generator_ColumnPropNameInRow="Vreme" msprop:Generator_ColumnPropNameInTable="VremeColumn" msprop:Generator_UserColumnName="Vreme" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
