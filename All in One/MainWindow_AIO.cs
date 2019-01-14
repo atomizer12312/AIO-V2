@@ -26,7 +26,7 @@ namespace SplashScreen
         {
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
-            Thread.Sleep(9500);
+            Thread.Sleep(9000);
             InitializeComponent();
             t.Abort();
         }                                                                            // Spalsh Screen, zapravo ne radi nista ali lepo izgleda.
