@@ -16,6 +16,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace SplashScreen
 {
@@ -25,7 +26,7 @@ namespace SplashScreen
         {
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
-            Thread.Sleep(10000);
+            Thread.Sleep(9500);
             InitializeComponent();
             t.Abort();
         }                                                                            // Spalsh Screen, zapravo ne radi nista ali lepo izgleda.
@@ -34,6 +35,12 @@ namespace SplashScreen
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            circularProgressBar1.Value = 0;
+            circularProgressBar1.Minimum = 0;
+            circularProgressBar1.Maximum = 100;
+            circularProgressBar2.Value = 0;
+            circularProgressBar2.Minimum = 0;
+            circularProgressBar2.Maximum = 100;
 
         }                                   // Otvara glavni prozor.
 
@@ -99,5 +106,20 @@ namespace SplashScreen
             AboutBox1 box = new AboutBox1();
             box.ShowDialog();
         }                                  // Dugme za otvaranje "About" prozora.
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            float cpu = CPU.NextValue();
+            float ram = RAM.NextValue();
+            circularProgressBar1.Value = (int)cpu;
+            circularProgressBar2.Value = (int)ram;
+            label9.Text = string.Format("{0:0}%", ram);
+            label10.Text = string.Format("{0:0}%", cpu);
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
     }
 }
