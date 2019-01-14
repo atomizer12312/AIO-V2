@@ -382,9 +382,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(222, 306);
+            this.ClientSize = new System.Drawing.Size(222, 312);
             this.Controls.Add(this.labelCurrentOperation);
             this.Controls.Add(this.textBox_Result);
             this.Controls.Add(this.button15);

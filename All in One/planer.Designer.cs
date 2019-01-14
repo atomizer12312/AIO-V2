@@ -146,6 +146,7 @@
             this.Name = "planer";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "planer";
             this.Load += new System.EventHandler(this.planer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
