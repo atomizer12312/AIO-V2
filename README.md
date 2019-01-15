@@ -17,7 +17,7 @@ Nakon ponovnog ulaska u formu dodaju se prazni redovi.
 ```
 ## Suggestions and contact
 
-[e-mail](markoprugic@hotmail.rs)
+[e-mail](mailto:markoprugic@hotmail.rs)
  
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
